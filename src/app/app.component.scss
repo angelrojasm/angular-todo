@@ -1,0 +1,129 @@
+#app {
+  width: 100%;
+  height: 100%;
+
+  #header {
+    box-sizing: border-box;
+    background-color: black;
+    opacity: 0.8;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 3px;
+    margin-bottom: 2.5%;
+    position: fixed;
+    top: 0;
+    left: 0%;
+
+    h2 {
+      color: white;
+      white-space: nowrap;
+    }
+
+    #header-content {
+      margin-left: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      #logo {
+        box-sizing: border-box;
+        height: 75px;
+        width: 75px;
+        margin: 0;
+        padding: 2%;
+        margin-left: 10%;
+      }
+    }
+  }
+
+  #main {
+    position: relative;
+    border-radius: 40px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 15px black;
+    height: 500px;
+    width: 350px;
+    margin: 0 auto;
+    top: 20vh;
+
+    .title {
+      background-color: #00003a;
+      width: 100%;
+      height: 20%;
+      text-align: center;
+      color: white;
+      border-top-left-radius: 40px;
+      border-top-right-radius: 40px;
+
+      h2 {
+        width: 100%;
+        text-align: center;
+        position: relative;
+        top: 15px;
+      }
+    }
+    #task-input-bar {
+      box-sizing: border-box;
+      height: 12%;
+      width: 100%;
+      border-bottom: 1px solid gray;
+
+      .task-input {
+        height: 100%;
+        width: 75%;
+        margin: 0 auto;
+        position: relative;
+        left: 5%;
+
+        input {
+          box-sizing: border-box;
+          border-top-left-radius: 20px;
+          border-bottom-left-radius: 20px;
+          height: 80%;
+          width: 70%;
+          border: 1px solid darkgray;
+          margin-top: 3px 0 0 0;
+          outline: none;
+          border-right: none;
+          padding-left: 8px;
+          padding-right: 0;
+          margin-right: 0;
+        }
+
+        button {
+          box-sizing: border-box;
+          position: relative;
+          right: 5px;
+          height: 87%;
+          border: 1px solid darkgray;
+          background-color: #00003a;
+          color: white;
+          font-weight: bold;
+          margin: 4px 0 0 0;
+          border-top-right-radius: 18px;
+          border-bottom-right-radius: 18px;
+          cursor: pointer;
+          outline: none;
+          transition: all 200ms linear;
+          &:hover {
+            background-color: black;
+          }
+        }
+
+        .task {
+          box-sizing: border-box;
+          height: 10%;
+          width: 100%;
+          border-bottom: 1px solid gray;
+          margin: 0px;
+        }
+      }
+    }
+  }
+}

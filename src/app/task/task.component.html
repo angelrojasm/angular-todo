@@ -1,0 +1,7 @@
+<div id='list-entry'>
+    <p [ngClass]="isChecked? 'entry-text checked':'entry-text'">{{Task}}</p>
+    <div class='icons'>
+        <fa-icon [icon]="faCheck" id="check-icon" (click)="checkItem()" ></fa-icon>
+        <fa-icon [icon]="faTrash" id="trash-icon" (click)="deleteItem(Task)"></fa-icon>
+    </div>
+</div>
